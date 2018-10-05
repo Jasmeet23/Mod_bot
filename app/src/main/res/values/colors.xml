@@ -41,4 +41,6 @@
     <color name="grey_text">#222D31</color>
     <color name="me_chat_bg">#FFE0B2</color>
 
+    <color name="grey_translucent">#91e0e0e0</color>
+
 </resources>
