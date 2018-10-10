@@ -69,21 +69,38 @@ public class ChatDetailsListAdapter extends BaseAdapter {
         }else{
             holder = (ViewHolder) convertView.getTag();
         }
-        
-        holder.message.setText(msg.getText());
+
+		try {
+			if(msg.getIs_text().equals("1")) {
+				holder.message.setVisibility(View.VISIBLE);
+				holder.message.setText(msg.getText());
+				holder.audio_layout.setVisibility(View.GONE);
+
+			}
+			else {
+				holder.message.setVisibility(View.GONE);
+				holder.audio_layout.setVisibility(View.VISIBLE);
+				holder.aud_name_tv.setText(msg.getAudName());
+			}
+		} catch (NullPointerException e) {
+			e.printStackTrace();
+		}
+//
+//		holder.message.setText(msg.getText());
 		holder.time.setText(msg.getReadableTime());
 
         if(msg.getReceiver().getId().equals(set.readSetting("myid"))){
-            holder.lyt_parent.setPadding(5, 3, 10, 2);
+            holder.lyt_parent.setPadding(5, 3, 90, 2);
             holder.lyt_parent.setGravity(Gravity.LEFT);
-            holder.audio_layout.setVisibility(View.GONE);
-
-			holder.play_icon.setImageResource(R.drawable.ic_play_circle_filled_dark_24dp);
-			holder.aud_name_tv.setTextColor(mContext.getResources().getColor(R.color.colorPrimaryDarkDarkDark));
-			holder.time.setTextColor(mContext.getResources().getColor(R.color.colorPrimaryDarkDarkDark));
-			holder.message.setTextColor(mContext.getResources().getColor(R.color.colorPrimaryDarkDarkDark));
-            holder.message.setTextColor(mContext.getResources().getColor(R.color.colorPrimaryDarkDarkDark));
-            holder.lyt_thread.setBackgroundResource(R.drawable.left_chat_msg_box_style);
+			if(holder.audio_layout.getVisibility()==View.VISIBLE) {
+				holder.play_icon.setImageResource(R.drawable.ic_play_circle_filled_dark_24dp);
+				holder.aud_name_tv.setTextColor(mContext.getResources().getColor(R.color.colorPrimaryDarkDarkDark));
+			}
+			if (holder.message.getVisibility()==View.VISIBLE) {
+				holder.time.setTextColor(mContext.getResources().getColor(R.color.colorPrimaryDarkDarkDark));
+				holder.message.setTextColor(mContext.getResources().getColor(R.color.colorPrimaryDarkDarkDark));
+			}
+			holder.lyt_thread.setBackgroundResource(R.drawable.left_chat_msg_box_style);
 //            holder.lyt_thread.setCardBackgroundColor(Color.parseColor("#FFFFFF"));
 //            holder.profile_img.setImageResource(R.drawable.mascot_face);
             //holder.image_status.setImageResource(android.R.color.transparent);
@@ -92,7 +109,7 @@ public class ChatDetailsListAdapter extends BaseAdapter {
 
         	holder.profile_img.setVisibility(View.GONE);
         	holder.lyt_thread.setBackgroundResource(R.drawable.right_chat_msg_box_style);
-            holder.lyt_parent.setPadding(10, 3, 5, 2);
+            holder.lyt_parent.setPadding(90, 3, 5, 2);
             holder.lyt_parent.setGravity(Gravity.RIGHT);
 //            holder.lyt_thread.setCardBackgroundColor(mContext.getResources().getColor(R.color.colorPrimaryDarkDark));
         }

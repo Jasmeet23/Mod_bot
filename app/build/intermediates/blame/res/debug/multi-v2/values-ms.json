@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jasmeetkaur/Downloads/Mod_bot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ms/values-ms.xml",
+            "outputFile": "/home/himani/AndroidStudioProjects/Mod_bot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ms/values-ms.xml",
             "map": [
                 {
-                    "source": "/Users/jasmeetkaur/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.0.1.aar/468a6563dbd41feb2ac2a0a85a26c55e/res/values-ms/values.xml",
+                    "source": "/home/himani/.gradle/caches/transforms-1/files-1.1/play-services-base-10.0.0.aar/78c188cd37bb3422c7698c52cde98baf/res/values-ms/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "283,387,592,720,824,1055,1185,1317,1561,1668,1874,2007,2237,2438,2531,2621",
+                        "endColumns": "103,204,127,103,230,129,131,243,106,205,132,229,200,92,89,107",
+                        "endOffsets": "386,591,719,823,1054,1184,1316,1560,1667,1873,2006,2236,2437,2530,2620,2728"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "177,285,490,622,730,961,1095,1436,1680,1791,1997,2134,2364,2569,2666,2760",
+                        "endColumns": "107,204,131,107,230,133,135,243,110,205,136,229,204,96,93,111",
+                        "endOffsets": "280,485,617,725,956,1090,1226,1675,1786,1992,2129,2359,2564,2661,2755,2867"
+                    }
+                },
+                {
+                    "source": "/home/himani/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.0.1.aar/51b7aa98cb4bb6cbc136d125e097ae8f/res/values-ms/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/jasmeetkaur/.gradle/caches/transforms-1/files-1.1/play-services-ads-10.0.0.aar/9fa33092c85a884d16f05ea2b07ea722/res/values-ms/values.xml",
+                    "source": "/home/himani/.gradle/caches/transforms-1/files-1.1/play-services-ads-10.0.0.aar/93f610fcb30a5204ed4188ff3083fcd4/res/values-ms/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0",
@@ -35,23 +52,6 @@
                         "startOffsets": "105,2872,2993,3093,3192,3296,3393,3497,3569,3700",
                         "endColumns": "71,120,99,98,103,96,103,71,130,89",
                         "endOffsets": "172,2988,3088,3187,3291,3388,3492,3564,3695,3785"
-                    }
-                },
-                {
-                    "source": "/Users/jasmeetkaur/.gradle/caches/transforms-1/files-1.1/play-services-base-10.0.0.aar/6e6a35cfd18ba578bae3215c21537a3e/res/values-ms/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "283,387,592,720,824,1055,1185,1317,1561,1668,1874,2007,2237,2438,2531,2621",
-                        "endColumns": "103,204,127,103,230,129,131,243,106,205,132,229,200,92,89,107",
-                        "endOffsets": "386,591,719,823,1054,1184,1316,1560,1667,1873,2006,2236,2437,2530,2620,2728"
-                    },
-                    "to": {
-                        "startLines": "3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "177,285,490,622,730,961,1095,1436,1680,1791,1997,2134,2364,2569,2666,2760",
-                        "endColumns": "107,204,131,107,230,133,135,243,110,205,136,229,204,96,93,111",
-                        "endOffsets": "280,485,617,725,956,1090,1226,1675,1786,1992,2129,2359,2564,2661,2755,2867"
                     }
                 }
             ]

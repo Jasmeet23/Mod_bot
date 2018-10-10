@@ -1,6 +1,7 @@
 package com.app.sample.fchat;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import org.apache.commons.io.FileUtils;
@@ -92,6 +93,13 @@ public class RecordDialog extends AppCompatDialogFragment {
     private String opFile;
     private String outputFile;
     private static String urlLink = "http://192.168.2.71:9009/audioqa/";
+
+    private RecordDialogListener listener;
+
+    public interface RecordDialogListener{
+        void applyTexts(String audName);
+        void downloadAudio(String audName);
+    }
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -187,6 +195,10 @@ public class RecordDialog extends AppCompatDialogFragment {
                 });
 
                 doFileUpload(opFile);
+
+                listener.applyTexts(outputFile);
+                listener.downloadAudio(outputFile);
+
                 //translateAudioToText();
 
                 //translateAudioToText();
@@ -255,6 +267,17 @@ public class RecordDialog extends AppCompatDialogFragment {
 //            }
 //        });
         return buider.create();
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        try {
+            listener = (RecordDialogListener) context;
+        } catch (ClassCastException e) {
+            throw new ClassCastException(context.toString()+"must implement RecordDialogListener");
+
+        }
     }
 
 
@@ -553,7 +576,4 @@ return null;
 
     }
 
-//    public interface RecordDialogListerner{
-//        void applyTexts();
-//    }
 }

@@ -1,3 +1,3 @@
-# Referenced at /Users/jasmeetkaur/Downloads/Mod_bot/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:35
+# Referenced at /home/himani/AndroidStudioProjects/Mod_bot/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:35
 -keep class android.support.multidex.MultiDexApplication { <init>(...); }
 
