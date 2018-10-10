@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jasmeetkaur/Downloads/Mod_bot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka/values-ka.xml",
+            "outputFile": "/home/himani/AndroidStudioProjects/Mod_bot/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka/values-ka.xml",
             "map": [
                 {
-                    "source": "/Users/jasmeetkaur/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.0.1.aar/468a6563dbd41feb2ac2a0a85a26c55e/res/values-ka/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "285",
-                        "endColumns": "201",
-                        "endOffsets": "486"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1193",
-                        "endColumns": "201",
-                        "endOffsets": "1390"
-                    }
-                },
-                {
-                    "source": "/Users/jasmeetkaur/.gradle/caches/transforms-1/files-1.1/play-services-ads-10.0.0.aar/9fa33092c85a884d16f05ea2b07ea722/res/values-ka/values.xml",
+                    "source": "/home/himani/.gradle/caches/transforms-1/files-1.1/play-services-ads-10.0.0.aar/93f610fcb30a5204ed4188ff3083fcd4/res/values-ka/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "/Users/jasmeetkaur/.gradle/caches/transforms-1/files-1.1/play-services-base-10.0.0.aar/6e6a35cfd18ba578bae3215c21537a3e/res/values-ka/values.xml",
+                    "source": "/home/himani/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.0.1.aar/51b7aa98cb4bb6cbc136d125e097ae8f/res/values-ka/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "285",
+                        "endColumns": "201",
+                        "endOffsets": "486"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1193",
+                        "endColumns": "201",
+                        "endOffsets": "1390"
+                    }
+                },
+                {
+                    "source": "/home/himani/.gradle/caches/transforms-1/files-1.1/play-services-base-10.0.0.aar/78c188cd37bb3422c7698c52cde98baf/res/values-ka/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
