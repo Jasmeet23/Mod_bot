@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Oct 10 18:59:59 IST 2018
+#Wed Oct 10 22:27:41 IST 2018
 4.path=lib/x86/libpl_droidsonroids_gif.so
 8.set=NATIVE_RESOURCE
 6.path=classes.dex
