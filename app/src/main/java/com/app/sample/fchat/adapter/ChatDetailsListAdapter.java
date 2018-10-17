@@ -104,7 +104,7 @@ public class ChatDetailsListAdapter extends BaseAdapter {
 		holder.time.setText(msg.getReadableTime());
 
         if(msg.getReceiver().getId().equals(set.readSetting("myid"))){
-            holder.lyt_parent.setPadding(5, 3, 90, 2);
+            holder.lyt_parent.setPadding(10, 3, 90, 2);
             holder.lyt_parent.setGravity(Gravity.LEFT);
 			if(holder.audio_layout.getVisibility()==View.VISIBLE) {
 				holder.play_icon.setImageResource(R.drawable.ic_play_circle_filled_dark_24dp);
@@ -114,7 +114,7 @@ public class ChatDetailsListAdapter extends BaseAdapter {
 				holder.time.setTextColor(mContext.getResources().getColor(R.color.colorPrimaryDarkDarkDark));
 				holder.message.setTextColor(mContext.getResources().getColor(R.color.colorPrimaryDarkDarkDark));
 			}
-			holder.lyt_thread.setBackgroundResource(R.drawable.left_chat_msg_box_style);
+			holder.lyt_thread.setBackgroundResource(R.drawable.left_chat_bubble);
 //            holder.lyt_thread.setCardBackgroundColor(Color.parseColor("#FFFFFF"));
 //            holder.profile_img.setImageResource(R.drawable.mascot_face);
             //holder.image_status.setImageResource(android.R.color.transparent);
@@ -122,8 +122,8 @@ public class ChatDetailsListAdapter extends BaseAdapter {
 //        	when msg is audio txt_layout visibility will be gone; if text, audio layout visibility will be gone
 
         	holder.profile_img.setVisibility(View.GONE);
-        	holder.lyt_thread.setBackgroundResource(R.drawable.right_chat_msg_box_style);
-            holder.lyt_parent.setPadding(90, 3, 5, 2);
+        	holder.lyt_thread.setBackgroundResource(R.drawable.right_chat_bubble);
+            holder.lyt_parent.setPadding(90, 3, 10, 2);
             holder.lyt_parent.setGravity(Gravity.RIGHT);
 //            holder.lyt_thread.setCardBackgroundColor(mContext.getResources().getColor(R.color.colorPrimaryDarkDark));
         }
