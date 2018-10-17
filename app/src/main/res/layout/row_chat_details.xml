@@ -13,7 +13,7 @@
         android:layout_height="40dp"
         android:src="@drawable/mascot_face"
         app:civ_border_color="@color/translucent"
-        android:layout_gravity="center_vertical"
+        android:layout_gravity="top"
         app:civ_border_width="@dimen/cardview_default_radius" />
 
     <!--<android.support.v7.widget.CardView-->
@@ -32,7 +32,8 @@
             android:paddingBottom="5dp"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:paddingTop="5dp">
+            android:paddingTop="5dp"
+            android:layout_marginTop="2dp">
             <TextView
                 android:id="@+id/text_content"
                 android:layout_width="wrap_content"
