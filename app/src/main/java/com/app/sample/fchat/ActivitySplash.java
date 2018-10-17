@@ -15,6 +15,7 @@ import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 
 import com.app.sample.fchat.data.SettingsAPI;
 import com.app.sample.fchat.data.Tools;
@@ -43,6 +44,16 @@ public class ActivitySplash extends AppCompatActivity implements GoogleApiClient
     private static final int RC_SIGN_IN = 100;
     private SignInButton signInButton;
     private ProgressBar loginProgress;
+    private RelativeLayout loginLayout;
+
+    Handler handler = new Handler();
+    Runnable runnable = new Runnable() {
+        @Override
+        public void run() {
+            loginLayout.setVisibility(View.VISIBLE);
+        }
+    };
+
 
     private GoogleApiClient mGoogleApiClient;
     private FirebaseAuth mFirebaseAuth;
@@ -60,6 +71,9 @@ public class ActivitySplash extends AppCompatActivity implements GoogleApiClient
         // Assign fields
         signInButton = (SignInButton) findViewById(R.id.sign_in_button);
         loginProgress = (ProgressBar) findViewById(R.id.login_progress);
+        loginLayout =   (RelativeLayout) findViewById(R.id.login_layout);
+
+        handler.postDelayed(runnable,1000); //5000 is timeout of splash screen
 
         // Set click listeners
         signInButton.setOnClickListener(this);
