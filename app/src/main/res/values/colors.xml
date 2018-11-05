@@ -42,5 +42,6 @@
     <color name="me_chat_bg">#FFE0B2</color>
 
     <color name="grey_translucent">#91e0e0e0</color>
+    <color name="yellow">#eac435</color>
 
 </resources>

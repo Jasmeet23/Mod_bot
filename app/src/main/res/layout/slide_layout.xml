@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/chat_bubble_full"
+    android:background="@drawable/chat_backgrnd"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
@@ -22,12 +22,12 @@
 
     <ImageView
         android:id="@+id/slide_imageView"
-        android:layout_width="212dp"
-        android:layout_height="209dp"
-        android:layout_alignParentBottom="true"
+        android:layout_width="315dp"
+        android:layout_height="453dp"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginStart="96dp"
         android:layout_marginBottom="0dp"
-        app:srcCompat="@drawable/mascot_side2" />
+        app:srcCompat="@drawable/mascot_side" />
 
 </RelativeLayout>
